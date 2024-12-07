@@ -2,21 +2,20 @@
 ** EPITECH PROJECT, 2024
 ** juzoo
 ** File description:
-** my_strcpy.c
+** my_strncpy.c
 */
 
-#include "my.h"
+#include "../includes/my.h"
 
-char *my_strcpy(char *dest, char const *src)
+char *my_strncpy(char *dest, char const *src, int n)
 {
-    int index = 0;
+    int index = -1;
 
     if (!dest || !src)
         return NULL;
-    while (src[index]) {
+    while (src[index] && index < n) {
         dest[index] = src[index];
         index++;
     }
-    dest[index] = '\0';
     return dest;
 }

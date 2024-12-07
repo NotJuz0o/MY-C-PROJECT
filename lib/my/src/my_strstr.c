@@ -5,7 +5,7 @@
 ** my_strstr.c
 */
 
-#include "my.h"
+#include "../includes/my.h"
 
 char *my_strstr(char *str, char const *to_find)
 {

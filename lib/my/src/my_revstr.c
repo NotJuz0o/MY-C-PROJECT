@@ -5,7 +5,7 @@
 ** my_revstr.c
 */
 
-#include "my.h"
+#include "../includes/my.h"
 
 char *my_revstr(char *str)
 {
