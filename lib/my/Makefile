@@ -7,7 +7,9 @@
 
 .PHONY: all clean fclean re
 
-SRC =	src/my_strstr.c \
+SRC =	src/my_putstr.c \
+		src/my_putchar.c \
+		src/my_strstr.c \
 		src/my_strlen.c \
 		src/my_strcmp.c \
 		src/my_strcpy.c \

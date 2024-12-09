@@ -9,6 +9,10 @@
     #define MY_H
 
     #include <stddef.h>
+    #include <unistd.h>
+
+    #define SUCCESS 0
+    #define FAILURE 84
 
 char *my_strcpy(char *dest, char const *src);
 char *my_strncpy(char *dest, char const *src, int n);
@@ -19,5 +23,7 @@ int my_strncmp(char const *s1, char const *s2, int n);
 int my_str_isalpha(char const *str);
 int my_str_isnum(char const *str);
 int my_strlen(char const *str);
+int my_putchar(int c);
+int my_putstr(char const *str);
 
 #endif /* MY_h */
