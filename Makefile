@@ -17,10 +17,10 @@ CFLAGS = -I./include
 
 LIBS = -L./lib -L. -lmy
 
+all: lib $(NAME)
+
 lib:
 	$(MAKE) -C lib/my
-
-all: lib $(NAME)
 
 $(NAME): $(OBJ)
 	gcc -o $(NAME) $(OBJ) $(LIBS) -g
