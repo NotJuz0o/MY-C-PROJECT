@@ -9,6 +9,6 @@
 
 int main(void)
 {
-    write(1, "hello world\n", 12);
+    write(1, "helloeworld\n", 12);
     return SUCCESS;
 }
